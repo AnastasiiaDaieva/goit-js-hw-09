@@ -108,16 +108,15 @@ accessModal.addEventListener('click', e => {
     closeModal()
   }
 })
-
-window.addEventListener('keydown', e => {
-  if (e.code === 'ArrowRight') {
-    originalImage.src = e.target.dataset.original
-    originalImage.alt = e.target.alt
-    originalImage.id = e.target.id
-  }
-})
-
 // slider
+
+// window.addEventListener('keydown', e => {
+//   if (e.code === 'ArrowRight') {
+//     originalImage.src = e.target.dataset.original
+//     originalImage.alt = e.target.alt
+//     originalImage.id = e.target.id
+//   }
+// })
 
 // function sliderForGalleryViaArrows() {
 //   items.forEach(item => {
