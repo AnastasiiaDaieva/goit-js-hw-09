@@ -66,7 +66,7 @@ const items = galleryItems.map(item => {
 function createItem(preview, original, description) {
   return `
   <li class="gallery__item">
-    <img class="gallery__image" src="${preview}" data-original="${original}" alt="${description}" id=""/>
+    <img class="gallery__image" src="${preview}" data-original="${original}" alt="${description}"/>
   </li>
   `
 }
@@ -90,10 +90,11 @@ ulAccess.addEventListener('click', e => {
     accessModal.classList.add('is-open')
     originalImage.src = e.target.dataset.original
     originalImage.alt = e.target.alt
-    originalImage.id = e.target.id
     console.log(originalImage)
   }
 })
+
+// closing the modal window
 
 buttonAccess.addEventListener('click', closeModal)
 
@@ -108,28 +109,3 @@ accessModal.addEventListener('click', e => {
     closeModal()
   }
 })
-// slider
-
-// window.addEventListener('keydown', e => {
-//   if (e.code === 'ArrowRight') {
-//     originalImage.src = e.target.dataset.original
-//     originalImage.alt = e.target.alt
-//     originalImage.id = e.target.id
-//   }
-// })
-
-// function sliderForGalleryViaArrows() {
-//   items.forEach(item => {
-//     let getId = document.getElementById('1')
-//     return item
-//   })
-// }
-
-// sliderForGalleryViaArrows()
-
-// const idGen = function () {
-//   items.map(element => {
-//     element.id = `${galleryItems.indexOf(item)}`
-//     return element.id
-//   })
-// }
