@@ -51,7 +51,7 @@ const ulAccess = document.querySelector('.js-gallery')
 const accessModal = document.querySelector('.lightbox')
 const originalImage = document.querySelector('.lightbox__image')
 const buttonAccess = document.querySelector('.lightbox__button')
-console.log(buttonAccess)
+// console.log(buttonAccess)
 
 // loop for building the gallery
 const items = galleryItems.map(item => {
@@ -61,6 +61,8 @@ const items = galleryItems.map(item => {
 
   return element
 })
+const addElements = items.join('')
+ulAccess.insertAdjacentHTML('beforeend', addElements)
 
 // functions
 function createItem(preview, original, description) {
@@ -81,16 +83,13 @@ function clearOriginalImage() {
   originalImage.src = ''
 }
 
-const addElements = items.join('')
-ulAccess.insertAdjacentHTML('beforeend', addElements)
-
 // event listeners
 ulAccess.addEventListener('click', e => {
   if (e.target.nodeName === 'IMG') {
     accessModal.classList.add('is-open')
     originalImage.src = e.target.dataset.original
     originalImage.alt = e.target.alt
-    console.log(originalImage)
+    // console.log(originalImage)
   }
 })
 
