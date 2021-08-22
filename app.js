@@ -58,9 +58,9 @@ const items = galleryItems.map(item => {
   const { preview, original, description } = item
   const element = createItem(preview, original, description)
   // console.log(element)
-
   return element
 })
+// console.log(getActiveIndex(items))
 const addElements = items.join('')
 ulAccess.insertAdjacentHTML('beforeend', addElements)
 
@@ -76,12 +76,25 @@ function createItem(preview, original, description) {
 function closeModal() {
   accessModal.classList.remove('is-open')
   clearOriginalImage()
+  window.removeEventListener('keydown', closeModalByKey)
   // console.log(originalImage)
+}
+
+function closeModalByKey(e) {
+  if (e.code === 'Escape') {
+    closeModal()
+  }
 }
 
 function clearOriginalImage() {
   originalImage.src = ''
 }
+
+// for slider
+
+// function getCurrentIndex(arr, elem) {
+//   return arr.findIndex(img => img.original === elem.src)
+// }
 
 // event listeners
 ulAccess.addEventListener('click', e => {
@@ -97,14 +110,11 @@ ulAccess.addEventListener('click', e => {
 
 buttonAccess.addEventListener('click', closeModal)
 
-window.addEventListener('keydown', e => {
-  if (e.code === 'Escape') {
-    closeModal()
-  }
-})
+window.addEventListener('keydown', closeModalByKey)
 
 accessModal.addEventListener('click', e => {
   if (e.target !== originalImage) {
     closeModal()
   }
 })
+// slider
