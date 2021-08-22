@@ -83,6 +83,7 @@ function closeModal() {
 function closeModalByKey(e) {
   if (e.code === 'Escape') {
     closeModal()
+    console.log('Escape')
   }
 }
 
@@ -100,6 +101,7 @@ function clearOriginalImage() {
 ulAccess.addEventListener('click', e => {
   if (e.target.nodeName === 'IMG') {
     accessModal.classList.add('is-open')
+    window.addEventListener('keydown', closeModalByKey)
     originalImage.src = e.target.dataset.original
     originalImage.alt = e.target.alt
     // console.log(originalImage)
@@ -109,8 +111,6 @@ ulAccess.addEventListener('click', e => {
 // closing the modal window
 
 buttonAccess.addEventListener('click', closeModal)
-
-window.addEventListener('keydown', closeModalByKey)
 
 accessModal.addEventListener('click', e => {
   if (e.target !== originalImage) {
