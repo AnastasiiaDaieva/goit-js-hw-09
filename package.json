@@ -4,21 +4,26 @@
   "description": "homework #9",
   "main": "index.js",
   "scripts": {
-     "dev": "parcel src/*.html",
-"build": "parcel build src/*.html --public-url /goit-js-hw-09/"  },
+    "dev": "parcel src/*.html",
+    "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
+  },
   "repository": {
     "type": "git",
-    "url": "git+git@github.com:eche-unicorn/goit-js-hw-09.git"
+    "url": "git+https://github.com/eche-unicorn/goit-js-hw-09.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "git@github.com:eche-unicorn/goit-js-hw-09/issues"
+    "url": "https://github.com/eche-unicorn/goit-js-hw-09/issues"
   },
   "homepage": "https://eche-unicorn.github.io/goit-js-hw-09#readme",
   "dependencies": {},
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
+    "parcel-bundler": "^1.12.5",
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-plugin-nuke-dist": "^1.0.1",
+    "posthtml-include": "^1.6.2",
+    "sass": "^1.32.8"
   }
 }
