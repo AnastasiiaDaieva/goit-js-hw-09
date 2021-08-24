@@ -2,10 +2,10 @@
   "name": "goit-js-hw-09",
   "version": "1.0.0",
   "description": "homework #9",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
      "dev": "parcel src/*.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/*.html"
   },
   "repository": {
     "type": "git",
