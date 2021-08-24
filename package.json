@@ -4,7 +4,7 @@
   "description": "homework #9",
   "main": "app.js",
   "scripts": {
-     "dev": "parcel src/index.html",
+     "dev": "parcel src/*.html",
     "build": "parcel build src/index.html"
   },
   "repository": {
@@ -17,7 +17,7 @@
   "bugs": {
     "url": "git@github.com:eche-unicorn/goit-js-hw-09/issues"
   },
-  "homepage": "git@github.com:eche-unicorn/goit-js-hw-09#readme",
+  "homepage": "https://eche-unicorn.github.io/goit-js-hw-09#readme",
   "dependencies": {},
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
