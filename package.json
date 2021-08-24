@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
      "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html"
-  },
+"build": "parcel build src/*.html --public-url /goit-js-hw-09/"  },
   "repository": {
     "type": "git",
     "url": "git+git@github.com:eche-unicorn/goit-js-hw-09.git"
