@@ -1,0 +1,25 @@
+{
+  "name": "goit-js-hw-09",
+  "version": "1.0.0",
+  "description": "homework #9",
+  "main": "app.js",
+  "scripts": {
+     "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+git@github.com:eche-unicorn/goit-js-hw-09.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "git@github.com:eche-unicorn/goit-js-hw-09/issues"
+  },
+  "homepage": "git@github.com:eche-unicorn/goit-js-hw-09#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel-bundler": "^1.12.5"
+  }
+}
