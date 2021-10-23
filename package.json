@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eche-unicorn/goit-js-hw-09.git"
+    "url": "git+https://github.com/AnastasiiaDaieva/goit-js-hw-09.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/eche-unicorn/goit-js-hw-09/issues"
+    "url": "https://github.com/AnastasiiaDaieva/goit-js-hw-09/issues"
   },
-  "homepage": "https://eche-unicorn.github.io/goit-js-hw-09#readme",
+  "homepage": "https://AnastasiiaDaieva.github.io/goit-js-hw-09#readme",
   "dependencies": {},
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
